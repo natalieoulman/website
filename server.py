@@ -9,8 +9,8 @@ app = Flask(__name__)
 #============================     PAGE ROUTES    ==================================#
 
 
-@app.route("/")
-def my_index():
+@app.route('/')
+def homepage():
     """Rendering landing page for Natalie's site"""
 
     return render_template("index.html")
