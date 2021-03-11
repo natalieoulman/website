@@ -13,7 +13,21 @@ app = Flask(__name__)
 def homepage():
     """Rendering landing page for Natalie's site"""
 
-    return render_template("index.html")
+    return render_template("home.html")
+
+
+@app.route('/natalie-projects')
+def project():
+    """Rendering project page for Natalie's site"""
+
+    return render_template("projects.html")
+
+
+@app.route('/natalie-about')
+def about():
+    """Rendering about page for Natalie's site"""
+
+    return render_template("about.html")
 
 
 if __name__ == '__main__':
